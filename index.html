@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ananya praka — cs & entrepreneurship</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #fff7ed;
+      --purple: #7a3fb3;
+      --deep-purple: #5b2d8b;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'inter', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--deep-purple);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 24px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--purple);
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-weight: 500;
+      color: var(--purple);
+      margin-top: 0;
+    }
+
+    .typing {
+      display: inline-block;
+      border-right: 3px solid var(--purple);
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 2.5s steps(22), blink 0.7s infinite step-end;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 26px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(91, 45, 139, 0.08);
+      margin-bottom: 28px;
+    }
+
+    a {
+      color: var(--purple);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: var(--purple);
+      color: white;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .buttons a:hover {
+      transform: translatey(-3px);
+      box-shadow: 0 10px 20px rgba(122, 63, 179, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1><span class="typing">hi, i'm ananya 💌</span></h1>
+      <h3>a computer science & entrepreneurship student at the university of washington</h3>
+    </header>
+
+    <section>
+      <ul>
+        <li>💻 i love working on <strong>full stack</strong> and <strong>ai/ml</strong> projects. my favorite languages include java, python, html/css/javascript, and sql.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 style="text-align:center;">projects</h2>
+
+      <section class="card">
+        <h3>💡 spendify</h3>
+        <p>a forge-based <strong>atlassian jira & rovo extension</strong> designed to help college students track spending, set budgets, and receive personalized financial tips powered by rovo ai.</p>
+        <ul>
+          <li>🏆 2nd place in the atlassian main track at dubhacks 2024</li>
+          <li>📊 expense tracking and budget visualization inside jira</li>
+          <li>🤖 ai-powered financial insights and spending tips</li>
+        </ul>
+        <p><em>tech:</em> typescript, react, atlassian forge</p>
+        <p><a href="https://devpost.com/software/spendify" target="_blank">devpost</a> · <a href="https://github.com/s-prshah/spendify-atlassian" target="_blank">github</a></p>
+      </section>
+
+      <section class="card">
+        <h3>🎵 snap sound</h3>
+        <p>an <strong>emotion recognition system</strong> that analyzes facial expressions from a live webcam or image and generates a personalized spotify playlist based on detected mood and listening history.</p>
+        <ul>
+          <li>📈 achieved 87% accuracy on emotion classification</li>
+          <li>🎧 integrated spotify recommendations & user listening history</li>
+          <li>🎤 presented to 17,000+ people at mit beaver works</li>
+        </ul>
+        <p><em>tech:</em> python, opencv, ml models, mongodb, html, css, javascript, typescript</p>
+        <p><a href="https://github.com/george-yuanji-wang/SnapSound-CogWorksCapstone" target="_blank">github</a> · <a href="https://www.canva.com/design/DAGMpaU_JqU/AH4NeXwkHHx0Bipb41QjUg/view" target="_blank">presentation</a></p>
+      </section>
+
+      <section class="card">
+        <h3>📸 momento</h3>
+        <p>a <strong>mindful memory scrapbook</strong> app that helps users capture photos and reflections, organizing memories by mood and theme to encourage reflection and mental well-being.</p>
+        <ul>
+          <li>🧠 focused on emotional awareness and memory preservation</li>
+          <li>📂 memories tagged by mood and context</li>
+        </ul>
+        <p><em>tech:</em> javascript, html/css</p>
+        <p><a href="https://devpost.com/software/momento-wo1axj" target="_blank">devpost</a></p>
+      </section>
+
+      <section class="card">
+        <h3>🧩 boggle solver</h3>
+        <p>a fast algorithmic solver that finds <strong>all valid words</strong> in any inputted boggle puzzle using efficient graph traversal techniques.</p>
+        <ul>
+          <li>⚡ optimized dfs with dictionary pruning</li>
+          <li>📐 emphasizes algorithmic problem solving</li>
+        </ul>
+        <p><em>tech:</em> python</p>
+        <p><a href="https://github.com/b-ananya/boggled_solver" target="_blank">github</a></p>
+      </section>
+
+      <section class="card">
+        <h3>🐍 retro snake</h3>
+        <p>a classic <strong>snake game</strong> built in c++ while learning low-level graphics and game loops using the raylib library.</p>
+        <ul>
+          <li>🎮 retro-style graphics & keyboard controls</li>
+          <li>⚙️ practiced real-time rendering and collision logic</li>
+        </ul>
+        <p><em>tech:</em> c++, raylib</p>
+        <p><a href="https://github.com/b-ananya/snake" target="_blank">github</a></p>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>🎵 mit beaver works</h2>
+      <p>as part of the cogworks program, my team built multiple <strong>ml and signal-processing projects</strong>, including a <strong>song recognizer using fourier transforms</strong> and a <strong>neural network built entirely from scratch</strong>.</p>
+      <ul>
+        <li>🎼 used ffts to identify songs from raw audio signals</li>
+        <li>🧠 implemented and trained neural networks without ml frameworks</li>
+        <li>📊 explored model evaluation, feature extraction, and optimization</li>
+      </ul>
+      <p><em>tools:</em> python, jupyter notebook, numpy, matplotlib</p>
+      <p>👉 <a href="https://github.com/george-yuanji-wang/team-Ctrl-V-cogworks2024" target="_blank">view cogworks projects on github</a></p>
+    </section>
+
+    <section>
+      <ul>
+        <li>🤖 throughout high school, i worked as a coding instructor at <strong>icode</strong>, teaching python drone programming, unreal engine game dev, 3d printing, data visualization, robotics, and more.</li>
+        <li>🏛️ currently taking courses in <strong>linear algebra</strong>, the <strong>hardware/software interface</strong>, and <strong>discrete math</strong>.</li>
+        <li>🪂 in my free time, i love hiking, reading, watching 90s sitcoms, and exploring national parks. i recently went <strong>skydiving</strong>!</li>
+      </ul>
+    </section>
+
+    <footer>
+      <h2>let’s connect</h2>
+      <div class="buttons">
+        <a href="mailto:apraka@uw.edu">email</a>
+        <a href="https://www.linkedin.com/in/apraka/" target="_blank">linkedin</a>
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">github</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
